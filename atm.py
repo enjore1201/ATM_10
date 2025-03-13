@@ -22,7 +22,7 @@ while True:
             #영수증에 데이터 넣기
             receipts.append(("입금",deposite_amount, balance))
         else:
-            print('ㅗ')
+            print('xxx')
     if num == "2":
         withdraw_amount = input("출금할 금액을 입력해주세요 : ")
         if withdraw_amount.isdigit() and int(withdraw_amount) > 0:
@@ -32,14 +32,14 @@ while True:
     
             receipts.append(("출금", withdraw_amount, balance))
         else:
-            print('ㅗ')
+            print('xxxxx')
     if num =="3":
         if receipts:
             print('===영수증===')
             for i in receipts:
                 print(f"{i[0]} : {i[1]}원 | 잔액 {i[2]}원")
         else:
-            print("ㅗㅗ")
+            print("xxxxxxx")
     if num =="4":
         print("서비스를 종료합니다")
         break
